@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_gravity="center"/>
+
+    <com.vvechirko.toys.polar.BottomWidget
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_gravity="bottom"
+        app:offsetAngle="90"
+        app:offsetX="0%"
+        app:offsetY="55%">
+
+        <!-- background circle -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="440dp"
+            android:layout_height="390dp"
+            android:background="@drawable/ic_circle_content_widget"
+            app:backgroundTint="?attr/colorPrimary"
+            app:layout_angle="0"
+            app:layout_mode="background"
+            app:layout_radius="0dp" />
+
+        <!-- Menu 3 Items -->
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addFile"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="0"
+            app:layout_mode="mode3"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="0"
+            app:layout_mode="mode3_secondary"
+            app:layout_radius="100dp"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addNote"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="55"
+            app:layout_mode="mode3"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="73"
+            app:layout_mode="mode3_secondary"
+            app:layout_radius="124dp"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addMoment"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="-55"
+            app:layout_mode="mode3"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="-73"
+            app:layout_mode="mode3_secondary"
+            app:layout_radius="124dp"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/menu3Back"
+            android:layout_width="140dp"
+            android:layout_height="132dp"
+            android:alpha=".2"
+            android:background="@drawable/ic_circle_content_widget"
+            app:backgroundTint="?attr/colorAccent"
+            app:layout_mode="mode3_secondary"
+            tools:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="35dp"
+            android:background="@null"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="?attr/colorAccent"
+            app:backgroundTint="?attr/colorAccent"
+            app:layout_mode="mode3_secondary"
+            tools:visibility="gone" />
+
+        <!-- Menu 5 Items -->
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addAudio"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="0"
+            app:layout_mode="mode5"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="0"
+            app:layout_mode="mode5_secondary"
+            app:layout_radius="110dp"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addVideo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="32"
+            app:layout_mode="mode5"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="40"
+            app:layout_mode="mode5_secondary"
+            app:layout_radius="114dp"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addDocument"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="-32"
+            app:layout_mode="mode5"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="-40"
+            app:layout_mode="mode5_secondary"
+            app:layout_radius="114dp"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addPhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="65"
+            app:layout_mode="mode5"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="79"
+            app:layout_mode="mode5_secondary"
+            app:layout_radius="135dp"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/addLink"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_angle="-65"
+            app:layout_mode="mode5"
+            app:layout_radius="145dp"
+            app:tint="?attr/colorAccent"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item text"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_angle="-79"
+            app:layout_mode="mode5_secondary"
+            app:layout_radius="135dp"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/menu5Back"
+            android:layout_width="140dp"
+            android:layout_height="132dp"
+            android:alpha=".2"
+            android:background="@drawable/ic_circle_content_widget"
+            android:paddingBottom="74dp"
+            android:paddingTop="10dp"
+            app:backgroundTint="?attr/colorAccent"
+            app:layout_mode="mode5_secondary" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/closeFile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/ic_icn_upload"
+            app:backgroundTint="?attr/colorAccent"
+            app:layout_mode="mode5_secondary"
+            tools:visibility="gone" />
+
+        <!-- FAB -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="?attr/colorAccent"
+            app:fabSize="normal"
+            app:layout_mode="collapsed"
+            app:layout_radius="60dp"
+            tools:visibility="gone" />
+    </com.vvechirko.toys.polar.BottomWidget>
+</android.support.design.widget.CoordinatorLayout>

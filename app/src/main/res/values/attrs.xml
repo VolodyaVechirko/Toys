@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomBar">
+        <attr name="barMenu" format="integer" />
+        <attr name="barColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="animation_duration" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flFlow" format="boolean" />
+
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+            <enum name="align" value="-65537"/>
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="flMaxRows" format="integer" />
+        <attr name="flRtl" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PolarLayout">
+        <attr name="offsetAngle" format="float" />
+        <attr name="offsetRadius" format="float" />
+        <attr name="offsetX" format="fraction" />
+        <attr name="offsetY" format="fraction" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PolarLayout_Layout">
+        <attr name="layout_angle" format="float" />
+        <attr name="layout_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomWidget_Layout">
+        <attr name="layout_mode" format="integer">
+            <flag name="background" value="0" />
+            <flag name="collapsed" value="1" />
+            <flag name="mode3" value="3" />
+            <flag name="mode3_secondary" value="4" />
+            <flag name="mode5" value="5" />
+            <flag name="mode5_secondary" value="6" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

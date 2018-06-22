@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:lineSpacingExtra="6sp"
+        android:textSize="15sp"
+        tools:text="Space The Final Frontier"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvTitle"
+        android:background="#22ffffff"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_margin="16dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="?attr/colorAccent"
+        android:textSize="17sp"
+        tools:text="https://www.khanacademy.org/partner-content/pixar/storytelling/we-are-all-storytellers/v/storytelling-introb"/>
+
+    <com.vvechirko.toys.linkprewiev.RoundedImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvLink"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="4dp"/>
+
+    <com.vvechirko.toys.linkprewiev.RoundedImageView
+        android:id="@+id/foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ivPreview"
+        android:layout_alignEnd="@+id/ivPreview"
+        android:layout_alignStart="@+id/ivPreview"
+        android:layout_alignTop="@+id/ivPreview"
+        android:background="#33333459"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_link"
+        app:cornerRadius="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
